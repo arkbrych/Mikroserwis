@@ -1,0 +1,32 @@
+Zadanie JavaDev
+
+DONE
+1. Wymagania
+Aplikacja w spring boot, mikroserwis ktory na wejscie przyjmuje w GET json:
+{
+    name: ""
+    surname: ""
+}
+zwrotnie w odpowiedzi zwraca HTTP 200 json postaci
+{
+    name: ""
+    surname: ""
+    gender: ""
+}
+
+TO_DO
+Dodatkowo w każdej odpowiedzi powinien być zwrócony nagłówek HTTP o nazwie "AppProcessingTime" zawierający ilość milisekund które uplynely od otrzymania żadania do odpowiedzi
+
+
+2. Regula biznesowa do zaimplementowania:
+DONE
+1. jezeli name konczy sie na "a" zwróć "F" w polu gender w przeciwnym wypadku zwróć "M"
+
+TO_DO
+2. jezeli name lub surname jest puste nalezy zwrocic odpowiedź informujaca o błędnych danych wejściowych (HTTP 400 Bad Request)
+
+3. Produkty podlegające odbiorowi:
+- aplikacja powinna dać się uruchomić z linii polecen, po uruchomieniu powinna nasluchiwac na porcie 8081
+TO_DO
+// przenieść GenderTest do ArkadiuszTest
+- raport z junitów 
